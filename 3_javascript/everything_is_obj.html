@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Object</title>
+</head>
+<body>
+    <h1>Everything is an Object</h1>
+    <input type="file" name="photo[]" id="file" multiple>
+    <script>
+        let name = "Jessica";
+        let age = 22;
+        let arr = ["John", 24, "IT", false];
+
+        function test() {
+            console.log({name, age, arr});
+        }
+
+        let obj = {
+             // properties
+            name: "John Doe",
+            age: 26,
+            job: "Developer",
+            status: false,
+
+            // method
+            teach: function (){
+                console.log(`${this.name} can teach Web Development`);
+            }
+        };
+
+        class One{
+            constructor(height, width) {
+                this.height = height;
+                this.width = width;
+            }
+        }
+
+        let one = new One(100,200);
+
+        let date = new Date();
+
+        let n = 34.684735855834;
+        // n.toFixed();
+        // Math.floor(n);
+        // Math.ceil(n);
+    </script>
+</body>
+</html>

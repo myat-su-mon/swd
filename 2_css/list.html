@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        body {
+            background-color: #03A9F4;
+        }
+        .test-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .test-list li {
+            background-color: #FFF;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            width: 150px;
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-left: 5px solid #73C7ED;
+            color: #03A9F4;
+            transition: 0.5s;
+            border-radius: 0 5px 5px 0;
+        }
+        .test-list li:hover {
+            border-left-width: 10px;
+            font-weight: bolder;
+        }
+        .box {
+            width: 200px;
+            border: 2px solid #FFF;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .box-title {
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #03A9F4;
+            border: 2px solid #FFF;
+            border-radius: 5px;
+            padding: 10px;
+            background: #FFF;
+        }
+
+        .nav-bar {
+            list-style-type: none;
+            padding: 10px;
+            background-color: #FFF;
+        }
+        .nav-item {
+            display: inline-block;
+            padding: 10px 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            transition: 0.5s;
+            color: #03A9F4;
+        }
+        .nav-item:hover {
+            background-color: #03A9F4;
+            color: #FFF;
+        }
+        .nav-item.active {
+            background-color: #03A9F4;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="box">
+        <legend class="box-title">My Test List</legend>
+        <ul class="test-list">
+            <li>Home</li>
+            <li>News</li>
+            <li>About</li>
+            <li>Our Service</li>
+            <li>Contact</li>
+        </ul>
+    </fieldset>
+
+    <nav>
+        <ul class="nav-bar">
+            <li class="nav-item active">News</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Our Service</li>
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

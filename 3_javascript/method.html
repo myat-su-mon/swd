@@ -1,0 +1,24 @@
+<h1>JavaScript Object, Property and Methods</h1>
+<script type="text/javascript">
+    
+    let mySelf = {
+        // properties
+        name : "John Doe", 
+        age : 23,
+        skill : "software development",
+
+        // methods
+        showAll : function(){
+            return `I'm ${this.name} and born in ${this.getBdYear(this.age)}
+            work as ${this.skill}.`;
+        },
+
+        getBdYear : function(age){
+            return 2020-age;
+        }
+    };
+</script>
+
+<!-- mySelf
+mySelf['name']
+mySelf.skill -->

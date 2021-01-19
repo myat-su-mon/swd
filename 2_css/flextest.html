@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Testing</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .bg-gray {
+            background-color: gray;
+        }
+        .bg-skyblue {
+            background-color: skyblue;
+        }
+        .bg-orange {
+            background-color: orangered;
+        }
+        .one {
+            height: 50vh;
+            background-color: #f5f5f5;
+            display: flex;
+        }
+        .part {
+            flex-grow: 1;
+        }
+        .part.right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .two {
+            width: 990px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            margin-top: -50px;
+            box-shadow: 0 0 25px #00000020;
+        }
+        .part-two {
+            text-align: center;
+            width: 300px;
+            padding: 30px 15px;
+            background-color: #ffffff;
+        }
+        .third {
+            width: 990px;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+        }
+        .third-part {
+            width: 500px;
+            text-align: center;
+        }
+        .four {
+            height: 100vh;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .four-img {
+            width: 450px; 
+        }
+        .four-part {
+            width: 450px;
+            padding: 0 50px;
+        }
+        .five {
+            background-color: #fff;
+            flex-direction: row-reverse;
+        }
+        .five-part {
+            text-align: right;
+        }
+
+        @media screen and (max-width: 480px) {
+            .one, .two, .three, .four, .five {
+               flex-direction: column;
+            }
+            section, div {
+                max-width: 100% !important;
+            }
+            .two {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="one">
+        <div class="part left bg-gray"></div>
+        <div class="part right bg-skyblue">
+            <div class="right-inner" style="width:300px;">
+            <h1>This is title</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia cupiditate aperiam sed repellendus quidem itaque culpa, eveniet exercitationem facilis ab aliquid provident omnis illo eos excepturi nihil maxime fuga porro!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="two">
+        <div class="part-two"><h1>This is one</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat doloribus voluptatem architecto quis ratione dolorem vero molestias veritatis dignissimos, magni neque dolore, magnam odit nam cumque quo dicta maxime ipsam.</p></div>
+        <div class="part-two"><h1>This is one</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat doloribus voluptatem architecto quis ratione dolorem vero molestias veritatis dignissimos, magni neque dolore, magnam odit nam cumque quo dicta maxime ipsam.</p></div>
+        <div class="part-two"><h1>This is one</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat doloribus voluptatem architecto quis ratione dolorem vero molestias veritatis dignissimos, magni neque dolore, magnam odit nam cumque quo dicta maxime ipsam.</p></div>
+    </section>
+
+    <section class="third">
+        <div class="third-part">
+            <h1>This is Third Part</h1>
+            <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio provident aliquam minus rem debitis modi ipsum asperiores alias commodi blanditiis delectus exercitationem, repellendus fuga soluta facilis. Facere ipsum est minima?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem deserunt quae quisquam fugit reiciendis nam nobis aspernatur aut suscipit sit esse amet nulla commodi et quo, hic dolorum illum officiis?
+            </p>
+        </div>
+    </section>
+
+    <section class="four">
+        <img src="/assets/02.jpg" class="four-img" alt="">
+        <div  class="four-part">
+        <h1>This is nature</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, id omnis repellat obcaecati earum, possimus, quisquam ad nobis eius consequuntur dignissimos! Magnam ea reiciendis exercitationem voluptatum beatae nesciunt inventore illum?</p>
+    </div>
+    </section>
+
+    <section class="four five">
+        <img src="/assets/02.jpg" class="four-img" alt="">
+        <div  class="four-part five-part">
+        <h1>This is nature</h1>
+        <p>Lorem ipsum dolor, sit am et consectetur adipisicing elit. Mollitia, id omnis repellat obcaecati earum, possimus, quisquam ad nobis eius consequuntur dignissimos! Magnam ea reiciendis exercitationem voluptatum beatae nesciunt inventore illum?</p>
+    </div>
+    </section>
+</body>
+</html>

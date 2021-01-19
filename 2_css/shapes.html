@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shape</title>
+    <style>
+        div {
+            display: inline-block;
+        }
+        .square {
+            width: 50px;
+            height: 50px;
+            border: 2px solid pink;
+        }
+        .square-rounded {
+            border-radius: 5px;
+        }
+        .rectangle {
+            width: 150px;
+            height: 50px;
+            border: 2px solid pink;
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            border: 2px solid pink;
+            border-radius: 50%;
+            background-color: plum;
+        }
+        .img-circle {
+            width: 50px;
+            border-radius: 50%;
+        }
+        .bg-img {
+            background-image: url("/assets/02.jpg");
+            background-size: cover;
+        }
+        .triangle {
+            border: 50px solid #ffffff;
+            border-bottom-color: pink;
+        }
+        .triangle-2 {
+            border: 50px solid #ffffff;
+            border-bottom-color: pink;
+            border-left-color: pink;
+        }
+        .envelope {
+            border: 50px solid #a5a5a5;
+            border-top-color: pink;
+            border-bottom-width: 10px;
+            border-radius: 5px;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            left: 50px;
+        }
+        .box::before {
+            content: "";
+            border: 50px solid pink;
+            position: absolute;
+            left: -25px;
+            border-left-color: white;
+        }
+        .box::after {
+            content: "";
+            border: 50px solid white;
+            position: absolute;
+            right: -25px;
+            border-left-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML, CSS Shapes</h1>
+    <div class="square"></div>
+    <div class="square square-rounded"></div>
+    <div class="rectangle"></div>
+    <hr>
+    <div class="circle"></div>
+    <img src="/assets/02.jpg" alt="" class="img-circle">
+    <div class="circle bg-img"></div>
+    <hr>
+    <div class="triangle"></div>
+    <div class="triangle-2"></div>
+    <div class="envelope"></div>
+    <hr>
+
+    <div class="box"></div>
+</body>
+</html>

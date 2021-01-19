@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendering Block</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 15px;
+            position: relative;
+        }
+        /* .box-tail {
+            display: inline-block;
+            background-color: pink;
+            border: 20px solid white;
+            border-top-color: pink;
+            margin-left: 200px;
+        } */
+        .box::after {
+            content: ""; 
+            background-color: black;
+            position: absolute;
+            bottom: -50px;
+            left: 200px;
+            border: 25px solid white;
+            display: inline-block;
+            border-top-color: pink;      
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <!-- <div class="box-tail"></div> -->
+</body>
+</html>

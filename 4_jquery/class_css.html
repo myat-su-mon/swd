@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class CSS</title>
+    <style>
+        .forText {
+            color: blue;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="p" class="one two three">Hello World</p>
+    <button id="change">change</button>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $("#change").click(function () {
+            // let p = $("#p").css({
+            //     color: "blue",
+            //     fontSize: "30px"
+            // });
+
+            // let p = $("#p").addClass("forText"); 
+            // p = $("#p").removeClass("one"); 
+            // let p = $("#p").toggleClass("forText"); 
+
+            // let p = $("#p").attr("class");
+            
+            let p = $("#p").width();
+            console.log(p);
+        });
+    </script>
+</body>
+</html>

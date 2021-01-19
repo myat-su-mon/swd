@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Looping</title>
+</head>
+<body>
+    <p>3 Times Hello</p>
+    <ol>
+    </ol>
+
+    <script>
+        // for in
+        let arr = ["apple", "banana", "orange", "mango", "avocado"];
+
+        // for(let i=0; i<arr.length; i++){
+        //     document.querySelector("ol").innerHTML += `<li>${arr[i]} (for)</li>`;
+        // }
+
+        // similar to i
+        // for(x in arr){
+        //     document.querySelector("ol").innerHTML += `<li>${arr[x]} (for in)</li>`;
+        // }
+
+        // x represents each element of array
+        // for(x of arr) {
+        //     document.querySelector("ol").innerHTML += `<li>${x} (for of)</li>`;
+        // }
+
+        // el represents each element in array. index represents index number of array.
+        // map only works at array prototype.
+        // arr.map(function (el, index) {
+        //     document.querySelector("ol").innerHTML += `<li>${el} - ${index}</li>`;
+        // });
+
+        function showHello(max) {
+            for(i=1; i<=max; i++){
+            console.log(`${i} Hello!`);
+            }
+            for(i=max; i>=1; i--){
+            console.log(`${i} Hello!`);
+            }
+        }
+
+        let obj = {
+             // properties
+            name: "John Doe",
+            age: 26,
+            job: "Developer",
+            status: false,
+
+            // method
+            // teach: function (){
+            //     console.log(`${this.name} can teach Web Development`);
+            // }
+        };
+
+        // x represents keys in object.
+        for(x in obj){
+            document.querySelector("ol").innerHTML += `<li>${x} ${obj[x]}</li>`;
+        }
+    </script>
+</body>
+</html>

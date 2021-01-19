@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/venobox/venobox.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card-columns my-5">
+                    <div class="mb-3">
+                        <a class="venobox" data-gall="myGallery"  href="images/01.jpeg">
+                            <img src="images/01.jpeg" class="img-fluid" alt="image alt"/>
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="venobox" data-gall="bb"  href="images/02.jpeg">
+                            <img src="images/02.jpeg" class="img-fluid" alt="image alt"/>
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="venobox" data-gall="myGallery"  href="images/03.jpeg">
+                            <img src="images/03.jpeg" class="img-fluid" alt="image alt"/>
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="venobox" data-gall="bb" href="images/04.jpeg">
+                            <img src="images/04.jpeg" class="img-fluid" alt="image alt"/>
+                        </a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="venobox" data-gall="myGallery"  href="images/05.jpeg">
+                            <img src="images/05.jpeg" class="img-fluid" alt="image alt"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/venobox/venobox.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('.venobox').venobox({
+            framewidth : '600px',                            // default: ''
+            frameheight: 'auto',                            // default: ''
+            border     : '1px',                             // default: '0'
+            bgcolor    : '#ffffff60',                          // default: '#fff'
+            titleattr  : 'data-title',                       // default: 'title'
+            numeratio  : true,                               // default: false
+            infinigall : true,                               // default: false
+            share      : ['facebook', 'twitter', 'download'] // default: []
+        }); 
+        });                 
+    </script>
+</body>
+</html>

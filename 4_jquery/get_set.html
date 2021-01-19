@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <p id="p" title="title">this is p tag</p>
+    <input type="text" id="input">
+    <select name="" id="select">
+        <option value="mm">mm</option>
+        <option value="cn">cn</option>
+        <option value="kr">kr</option>
+    </select>
+
+    <button class="btn">Click</button>
+    <script src="js/jquery.min.js"></script>
+    <script> // get method 
+        $(".btn").click(function () {
+            // let d = $("#p").html();
+            // let d = $("#input").val();
+            // let d = $("#select").val();
+            let d = $("#p").attr("title");
+            console.log(d);
+        });
+    </script>
+
+    <script> // set method
+        $(".btn").click(function () {
+            // let d = $("#p").html("I wanna change text");
+            // let d = $("#input").val("I wanna change input");
+            // let d = $("#select").val("cn");
+
+            let d = $("#p").attr("title", "I want to change");
+        });
+    </script>
+</body>
+</html>

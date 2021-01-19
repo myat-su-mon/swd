@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">Home</nav>
+    <section class="container-fluid vh-100" id="one">Section 1</section>
+    <section class="container-fluid vh-100" id="two">Section 2</section>
+    <section class="container-fluid vh-100" id="three">Section 3</section>
+    <section class="container-fluid vh-100" id="four">Section 4</section>
+    <section class="container-fluid vh-100" id="five">Section 5</section>
+
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script>
+        let waypoints = $('#three').waypoint(function (direction) {
+            if(direction == "down") {
+                console.log("I'm down.");
+                $(".navbar").removeClass("bg-primary");
+                $(".navbar").addClass("bg-warning");
+            }else {
+                console.log("I'm up.");
+                $(".navbar").addClass("bg-primary");
+                $(".navbar").removeClass("bg-warning");
+            }
+            // $(".navbar").toggleClass("bg-primary").toggleClass("bg-success");
+        }, {
+            offset: "20%"
+        });
+
+        let bb = $('#four').waypoint(function (direction) {
+            if(direction == "down") {
+                console.log("I'm down.");
+                $(".navbar").addClass("bg-primary");
+                $(".navbar").removeClass("bg-warning");
+                
+            }else {
+                console.log("I'm up.");
+                $(".navbar").removeClass("bg-primary");
+                $(".navbar").addClass("bg-warning");
+            }
+            // $(".navbar").toggleClass("bg-primary").toggleClass("bg-success");
+        }, {
+            offset: "20%"
+        });
+    </script>
+</body>
+</html>

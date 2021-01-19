@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Property</title>
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            padding: 50px;
+        }
+        .heading {
+            color: teal;
+        }
+        .paragraph {
+            color: cadetblue;
+            column-count: 3;
+            column-width: 300px;
+            column-rule: 1px solid black;
+            column-gap: 50px;
+        }
+        .paragraph p {
+            margin-bottom: 30px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .full {
+            column-span: all;
+            margin-top: 30px;
+        }
+        @media screen and (max-width:  480px) {
+            body {
+                padding: 25px;
+            }
+            .full {
+                margin-top: 0%;
+            }
+            .heading {
+                margin-bottom: 20px;
+            }
+        } */
+        .title {
+            color: #03A9F4;
+            margin: 30px auto;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 3em;
+        }
+        .gallery {
+            columns: 3 300px;
+            column-gap: 30px;
+            width: 1000px;
+            margin: auto;
+        }
+        .gallery-img {
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            filter: blur(5px);
+            transition: 0.5s;
+        }
+        .gallery-img:hover {
+            filter: contrast(150%);
+        }
+        @media screen and (max-width: 1024px){
+            .gallery {
+                width: 90%;
+            }
+        }
+        @media screen  and (max-width: 480px){
+            .gallery {
+                columns: 2 150px;
+                column-gap: 15px;
+            }
+            .gallery-img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--     
+    <h1 class="heading">CSS3 Column Property</h1>
+     <div class="paragraph">
+        <p class="full">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea temporibus dolorem ratione expedita vitae accusantium, quisquam omnis nulla odio quasi distinctio nam consequatur quas, excepturi nihil blanditiis sit officia!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea temporibus dolorem ratione expedita vitae accusantium, quisquam omnis nulla odio quasi distinctio nam consequatur quas, excepturi nihil blanditiis sit officia!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea temporibus dolorem ratione expedita vitae accusantium, quisquam omnis nulla odio quasi distinctio nam consequatur quas, excepturi nihil blanditiis sit officia!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea temporibus dolorem ratione expedita vitae accusantium, quisquam omnis nulla odio quasi distinctio nam consequatur quas, excepturi nihil blanditiis sit officia!</p>
+        <p class="full">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea temporibus dolorem ratione expedita vitae accusantium, quisquam omnis nulla odio quasi distinctio nam consequatur quas, excepturi nihil blanditiis sit officia!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea temporibus dolorem ratione expedita vitae accusantium, quisquam omnis nulla odio quasi distinctio nam consequatur quas, excepturi nihil blanditiis sit officia!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea temporibus dolorem ratione expedita vitae accusantium, quisquam omnis nulla odio quasi distinctio nam consequatur quas, excepturi nihil blanditiis sit officia!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ea temporibus dolorem ratione expedita vitae accusantium, quisquam omnis nulla odio quasi distinctio nam consequatur quas, excepturi nihil blanditiis sit officia!</p>
+    </div> -->
+
+    <div class="title"><span style="color: cadetblue;">Old Photo </span>Gallery</div>
+    <div class="gallery">
+        <img src="/assets/02.jpg" alt="" class="gallery-img">
+        <img src="/assets/02.jpg" alt="" class="gallery-img">
+        <img src="/assets/02.jpg" alt="" class="gallery-img">
+        <img src="/assets/02.jpg" alt="" class="gallery-img">
+        <img src="/assets/02.jpg" alt="" class="gallery-img">
+        <img src="/assets/02.jpg" alt="" class="gallery-img">
+        <img src="/assets/02.jpg" alt="" class="gallery-img">
+        <img src="/assets/02.jpg" alt="" class="gallery-img">
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .obj {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            transition: 0.5s;
+            transform: translateX(150px);
+            /* animation-name: first;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in; */
+            animation: first 2s linear 0s 3 alternate;
+        }
+        .obj:hover {
+            transform: translateX(50px);
+        }
+        @keyframes first {
+            from {
+                transform: translateX(0px);
+            }
+            to {
+                transform: translateX(150px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="obj"></div>
+</body>
+</html>

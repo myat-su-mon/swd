@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <style>
+        .obj {
+            width: 300px;
+            height: 100px;
+            background-color: gray;
+            margin-top: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="animate">Animate</button>
+    <button class="stop">Stop</button>
+    <div class="obj"></div>
+    <br>
+    <button class="chain">Chain</button>
+    <p class="obj2">Hello World</p>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(".animate").click(function () {
+            $(".obj").animate({
+                // opacity: "toggle"
+                left: "+=50px",
+                top: "+=100px"
+            }, 1000, function () {
+                console.log("animation is finished");
+            });
+        });
+        $(".stop").click(function () {
+            $(".obj").stop();
+        });
+
+        $(".chain").click(function () {
+            $(".obj2").hide(2000).show(1000).css("color", "blue");
+        });
+    </script>
+</body>
+</html>

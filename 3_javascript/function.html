@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        // let nowYear = 2020; // global scope
+    
+        // function myFun(name, age, work) {
+        //     let bdYear = nowYear-age; // local scope
+        //     let myself = `I'm ${name} and born in ${bdYear}. I'm now working as ${work} in Yangon.`;
+        //     return myself;
+        // }
+
+        // default parameter
+        function getBdYear(age = 20){
+            let now = 2020;
+            return showResult(now-age);
+        }
+
+        function showResult(input){
+            return `You was born in ${input}`;
+        }
+    
+    </script>
+</body>
+</html>

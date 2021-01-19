@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Part1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1000px;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .one {
+            width: 200px;
+            animation: toRight 1.5s;
+        }
+        img {
+            width: 200px;
+            height: 150px;
+        }
+        .two {
+            width: 500px
+        }
+        .two h1 {
+            animation: toLeft 1.5s;
+            margin-bottom: 20px;
+        }
+        .two p {
+            animation: toLeft 2s;
+        }
+        #heart {
+            width: 100px;
+            position: fixed;
+            bottom: 100px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            animation: shake 0.5s infinite alternate;
+        }
+        @keyframes toRight {
+            from {
+                transform: translateX(-550px);
+            }
+            to {
+                transform: translateX(0px);
+            }
+        }
+        @keyframes toLeft {
+            from {
+                transform: translateX(550px);
+            }
+            to {
+                transform: translateX(0px);
+            }
+        }
+        @keyframes shake {
+            from {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">
+            <img src="/assets/02.jpg">
+        </div>
+
+        <div class="two">
+            <h1>Sample Photo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio aliquid repellendus quas officia culpa impedit ad itaque nisi est quia dolores mollitia illo architecto, iste voluptatem consectetur iusto in.</p>
+        </div>
+    </div>
+   <img src="/assets/love.svg" id="heart">
+</body>
+</html>

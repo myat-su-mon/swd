@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Classes</title>
+</head>
+<body>
+    
+    <script>
+
+        let arr = ["x", "y", "z"];
+
+        let obj = {
+            name: "Zun Zun",
+            age: 22,
+            introduce: function () {
+                return `My name is ${this.name} and ${this.age} years old.`;
+            }
+        };
+
+        // class expression 
+        class Me {
+            name = "Zun Zun";
+            age = 22;
+            // access modifier
+            #bf = "Daung"; // private property
+
+            // custom method
+            showBf() {
+                return `${this.bf} is my boyfriend <3 `;
+            }
+
+             introduce() {
+                return `My name is ${this.name} and ${this.age} years old.`;
+            }
+        }
+
+        class Register {
+            // magic method
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+                console.log("this is constructor");
+            }
+
+            // prototype method 
+            get showBY() {
+                let currentYear = 2020;
+                return currentYear-this.age;
+            }
+
+            // static method 
+            static test() {
+                return "this is static method."
+            }
+        }
+    </script>
+</body>
+</html>

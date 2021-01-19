@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Button Design</title>
+    <style>
+        .btn {
+            padding: 10px 20px;
+            border: 2px solid black;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+            transition: 0.5s;
+        }
+        .btn:hover{
+            background-color: #00000070;
+        }
+        .btn-solid {
+            background-color: black;
+            color: whitesmoke;
+        }
+        .btn-rounded {
+            border-radius: 10px;
+        }
+        .btn-rounded-circular {
+            border-radius: 50px;
+        }
+        .btn-ellipse {
+            border-radius: 50%;
+        }
+        .btn-circle {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            padding: 0;
+        }
+        .btn-pink {
+            background-color: pink;
+            border: 2px solid pink;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Base Design</button>
+    <button class="btn btn-solid btn-pink">Solid Design</button>
+    <button class="btn btn-rounded">Rounded Design</button>
+    <button class="btn btn-solid btn-rounded">Rounded Solid</button>
+    <button class="btn btn-rounded-circular">Rounded Circular</button>
+    <button class="btn btn-solid btn-rounded-circular">Pill Solid</button>
+    <button class="btn btn-ellipse">Ellipse</button>
+    <button class="btn btn-circle">Circle</button>
+</body>
+</html>

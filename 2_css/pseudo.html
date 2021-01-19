@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        .container {
+            width: 500px;
+            border: 5px solid gray;
+            padding: 10px 20px;
+            transition: 1s;
+        }
+        .container:hover {
+            background-color: gray;
+            color: white;
+        }
+        .container:active {
+            background-color: pink;
+        }
+        .input:focus {
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque similique ad molestiae officiis, quaerat ratione. Quis, ipsa? Quis error id doloribus sapiente, perferendis sint vitae in sunt. Voluptatum, quas possimus?</p>
+    </div>
+    <input class="input" type="text">
+</body>
+</html>
